@@ -15,3 +15,11 @@
 def decode_char(morse_char)
   morse_dictionary.key(morse_char) || ' '
 end
+
+def decode_word(morse_word)
+  word = ''
+  morse_word.split.each do |char|
+    word += decode_char(char)
+  end
+  return word
+end
