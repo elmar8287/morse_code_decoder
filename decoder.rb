@@ -11,3 +11,7 @@ morse_dictionary = {
   'V' => '...-', 'W' => '.--', 'X' => '-..-',
   'Y' => '-.--', 'Z' => '--..'
 }
+
+def decode_char(morse_char)
+  morse_dictionary.key(morse_char) || ' '
+end
