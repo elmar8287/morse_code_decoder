@@ -31,3 +31,7 @@ def decode_message(morse_message)
   end
   message.join(' ')
 end
+
+result = decode_msg(morse_str)
+
+print "Here is the decoder result: #{result}"
