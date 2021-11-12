@@ -1,4 +1,5 @@
-morse_message = '.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-. / .-. ..- -... .. . ...'
+morse_message_bottle = '.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-. / .-. ..- -... .. . ...'
+morse_message_word = '-- -.--   -. .- -- .'
 
 def decode_char(morse_char)
   morse_dictionary = {
@@ -31,6 +32,8 @@ def decode_message(morse_text)
   message.join(' ')
 end
 
-result = decode_message(morse_message)
+result_bottle = decode_message(morse_message_bottle)
+result_word = decode_message(morse_message_word)
 
-print "Here is the decoder result: #{result}"
+puts "The message from bottle: #{result_bottle}"
+puts "The entire message decode result: #{result_word}"
